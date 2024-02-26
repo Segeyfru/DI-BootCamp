@@ -1,11 +1,8 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 .container {
     width: 1000px;
+    /* margin: calc(1.7rem + 16px) auto; */
     margin: 0 auto;
+    padding-top: calc(1.7rem + 16px);
 }
 .book {
     width: calc(100% / 4 - 40px);
