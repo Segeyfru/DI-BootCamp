@@ -6,9 +6,12 @@
 .container{
     width: 1200px;
     margin: 0 auto;
-    position: relative;
+    /* position: relative; */
 }
 nav{
+    /* position: fixed; */
+    left: 0;
+    top: 0;
     background-color: #333;
     font-size: 1.7rem;
     color: white;
@@ -16,5 +19,5 @@ nav{
 }
 nav p{
     display: inline-block;
-    
+    margin-left: calc(1200px - 190px);
 }
