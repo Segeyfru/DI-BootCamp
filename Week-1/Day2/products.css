@@ -1,0 +1,17 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+article tr th{
+    display: inline-block;
+}
+table{
+    margin: 10px auto;
+}
+th{
+    text-align: center;}
+.book{
+    width: 250px;
+    padding: 10px;
+}
