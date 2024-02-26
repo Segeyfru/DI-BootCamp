@@ -1,0 +1,17 @@
+body{
+    background-color: azure;
+}
+div{
+    display: inline-block;
+    width: 50px;
+    height: 100px;
+}
+.blue{
+    background-color: blue;
+}
+.white{
+    background-color: white;
+}
+.red{
+    background-color: red;
+}

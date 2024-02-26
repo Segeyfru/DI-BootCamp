@@ -1,0 +1,17 @@
+h1 {
+    margin: 0 10px;
+    border: 2px solid red;
+}
+h1{
+    border: 2px dashed blue ;
+}
+ul,li,a {
+    display: inline-block;
+    margin: 10px;
+    color: slateblue;
+    text-decoration: none;
+}
+article h2{
+    color: red;
+    background-color: yellow
+}
