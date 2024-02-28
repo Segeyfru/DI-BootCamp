@@ -4,8 +4,9 @@
     box-sizing: border-box;
 }
 .login {
-    /* width: 50%; */
+    width: 400px;
     background-color: azure;
+    margin: 0 auto;
     height: 100vh;
     text-align: center;
 }
@@ -14,6 +15,8 @@
     margin: 0 auto;
     border: 1px solid red;
     height: 100%;
+    padding-top: 180px;
+    position: relative;
 }
 .login input {
     width: 100%;
@@ -32,19 +35,30 @@
 .login .checkbox {
     width: min-content;
     display: inline-block;
+    margin-left: 4px;
 }
 .login .check a {
-    position: relative;
-    right: calc(100% - 100px
-    );
-    display: inline-block;
-    text-align: end;
-    color: #000;
-    margin-left: auto;
+    margin-left: calc(100% - 229px - 8px);
 }
-.login .submit {
+.withline{
+    margin: 15px 0;
+}
+.line{
+    height: 1px;
+    width: 100%;
+    background-color:burlywood;
     
+    position: relative;
+    top: 0.55rem;
 }
+.withline span{
+background-color: azure;
+z-index: 1;
+position: relative;
+/* top: -0.55rem; */
+padding: 0 16px;
+}
+
 .login button{
     margin: 20px 0; 
     width: 100%;
@@ -54,4 +68,27 @@
     color: white;
     text-transform: uppercase;
     border: 0;
+    font-weight: 600;
 }
+
+.icons {
+    margin: 20px;
+}
+.icons i{
+    padding: 10px;
+    font-size: 1.5rem;
+    /* margin: 10px; */
+    color: burlywood;
+}
+
+.footer{
+    margin-top: 50px;
+}
+/* .footer{
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+}
+.footer div{
+    text-align: center;
+} */
