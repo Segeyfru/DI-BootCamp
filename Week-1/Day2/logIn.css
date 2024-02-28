@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.login {
+    /* width: 50%; */
+    background-color: azure;
+    height: 100vh;
+    text-align: center;
+}
+.container {
+    width: 80%;
+    margin: 0 auto;
+    border: 1px solid red;
+    height: 100%;
+}
+.login input {
+    width: 100%;
+    font-size: 1rem;
+    padding: 10px;
+    margin: 10px 0;
+    border: 0;
+    background-color: #eee;
+}
+.check {
+    width: 100%;
+    /* position: relative; */
+    text-align: start;
+    display: inline-block;
+}
+.login .checkbox {
+    width: min-content;
+    display: inline-block;
+}
+.login .check a {
+    position: relative;
+    right: calc(100% - 100px
+    );
+    display: inline-block;
+    text-align: end;
+    color: #000;
+    margin-left: auto;
+}
+.login .submit {
+    
+}
+.login button{
+    margin: 20px 0; 
+    width: 100%;
+    font-size: 1rem;
+    padding: 10px;
+    background-color: rgb(205, 39, 174);
+    color: white;
+    text-transform: uppercase;
+    border: 0;
+}
