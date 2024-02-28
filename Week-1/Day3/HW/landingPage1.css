@@ -18,7 +18,7 @@ img.backG {
 }
 .container{
     width: 1200px;
-    margin: 0 auto;
+    margin: 0px auto;
     padding: 20px;
 }
 .title{
@@ -27,7 +27,7 @@ img.backG {
     font-weight: 700;
     /* width: 650px; */
     padding: 0 100px;
-    margin: 40px auto;
+    margin: 0px auto;
 }
 .numbers{
     /* width: 700px; */
@@ -55,7 +55,7 @@ img.backG {
     justify-content: space-between;
     height: 400px;
     width: 1200px;
-    margin: 70px auto;
+    margin: 0 auto;
 }
 .box{
     width: 350px;
