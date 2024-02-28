@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+img.backG {
+    width: 100vw;
+    height: 100vh;
+    opacity: 0.15;
+    position: absolute;
+    /* top: -10px; */
+    z-index: -1;
+}
+.container{
+    width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+.title{
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 700;
+    /* width: 650px; */
+    padding: 0 100px;
+    margin: 40px auto;
+}
+.numbers{
+    /* width: 700px; */
+    display: flex;
+    justify-content: space-between;
+    margin: 40px auto;
+}
+.num{
+    text-align: center;
+}
+.num h1{
+    color: blueviolet;
+    font-weight: 600;
+    margin-bottom: 10px;
+    font-size: 2.5rem;
+}
+.num p{
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: 600;
+    color: grey;
+}
+.boxes{
+    display: flex;
+    justify-content: space-between;
+    height: 400px;
+    width: 1200px;
+    margin: 70px auto;
+}
+.box{
+    width: 350px;
+    height:250px;
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: column;
+    margin: 15px;
+    border-radius: 8px;
+}
+.text{
+    background-color: white;
+    /* flex-grow: 4; */
+    height: 60%;
+    border-radius: 8px 8px 0 0;
+    font-size:1.1rem;
+    color: grey;
+    padding: 20px;
+}
+.bottom{
+    /* background-color: rgb(247, 140, 33);  */
+    height: 40%;
+    /* flex-grow: 3;    */
+    border-radius: 0 0 8px 8px;
+    position: relative;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.bottom img{
+    width: 60px;
+    position: absolute;
+    top: -30px;
+    left: calc(50% - 30px);
+}
+.orange{
+    background-color: orange;
+    align-self: flex-start;
+}
+.blue{
+    background-color: blue;
+    align-self: flex-end;
+}
+.green{
+    background-color: green;
+    align-self: center;
+}
+.bottom h3{
+margin-top: 10px ;
+text-transform: capitalize;
+color: white;
+}
+.bottom p{
+    margin-top: 4px;
+    color: white;
+    font-size: 0.8rem;
+}
