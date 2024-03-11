@@ -18,17 +18,11 @@ class Zoo:
                 groups[first_letter] = [animal]
             else:
                 groups[first_letter].append(animal)
-return groups
+        return groups
+    def get_groups(self):
+        groups = self.sort_animals()
+        groups_dict = {i + 1 : groups[group] for i, group in enumerate(groups)}
 
-
-        # for animal in self.animals:
-        #     # first_letter = animal[0]
-        #     if animal not in groups:
-        #         groups[i + 1] = animal
-        #         counter += 1
-        #     else:
-        #         groups[]
-
-
-# print(self.animals)
-
+ramat_gan_safari = Zoo('Safari Ramat Gan')
+ramat_gan_safari.add_animals('turtle', 'Elephant', 'Emmy')
+print(ramat_gan_safari.sort_animals())
