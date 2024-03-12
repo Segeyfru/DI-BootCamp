@@ -21,5 +21,12 @@ to_january()
 # Exersise 6
 
 
-# def from_birth(d, m, y):
-#     cu
+def from_birth(d, m, y):
+    date_of_Birth = datetime(y,m,d)
+    print(date_of_Birth)
+    curr_time = datetime.today()
+    print(curr_time)
+    from_birth = (curr_time - date_of_Birth)
+    return from_birth.days *24 *60
+    
+print(f'It`s been {from_birth(26,8,1996)} min since you were born')
