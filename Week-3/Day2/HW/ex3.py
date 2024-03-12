@@ -29,7 +29,6 @@ def case4():
 
 
 
-choice = int(input(
 
 
     def do_a_trick(self):
