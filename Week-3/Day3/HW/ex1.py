@@ -10,9 +10,7 @@ class Currency:
     #Dunder Methods
     
     def __str__(self):
-        output = f"""
-        {self.amount}          {self.currency}
-        """ 
+        output = f"{str(self.amount)}   {self.currency}" 
         return output
     
     def __int__(self):
@@ -63,7 +61,7 @@ c4 = Currency('shekel', 10)
 # c2 + 5
 # c1 + c3
 
-c3 += c4
-int(c3)
+# c3 += c4
+# int(c3)
 
 
