@@ -2,8 +2,7 @@ from anagram_checker import AnagramChecker
 import string
 
 def main():
-    print("")
-    print('Hi User! You can choise ')
+    print('\nHi User! You can choise ')
     print('1. If you want to look anagrams from your word')
     print('2. to Exit')
     
@@ -32,8 +31,7 @@ def check_or_exit():
                             Anagrams fo your word: {", ".join(anagrams)}''')
                         break
                     else:
-                        print("")
-                        print('You have to be more careful!')
+                        print('\nYou have to be more careful!')
                         print('You may check only ONE and only EXISTING word')
                 
             
