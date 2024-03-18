@@ -140,3 +140,5 @@
 # A group of teenagers are coming to your movie theater and want to watch a movie that is restricted for people between the ages of 16 and 21.
 # Given a list of names, write a program that asks teenager for their age, if they are not permitted to watch the movie, remove them from the list.
 # At the end, print the final list.
+
+user_input_age = input('What is the age of persons: ')
