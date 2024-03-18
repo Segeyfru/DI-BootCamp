@@ -1,12 +1,16 @@
-
+-- 		FirstTab
 -- (5,'Pawan'),
 -- (6,'Sharlee'),
 -- (7,'Krish'),
 -- (NULL,'Avtaar');
 
+-- 		SecondTab
+-- (5),
+-- (NULL)
+
 
 -- Q1. What will be the OUTPUT of the following statement?
--- SELECT COUNT (*) FROM FirstTab AS ft WHERE ft.id NOT IN (SELECT id FROM SecondTab WHERE id IS NULL)
+-- SELECT COUNT (*) FROM  AS ft WHERE ft.id NOT IN (SELECT id FROM SecondTab WHERE id IS NULL)
 
 -- count = 0
 
