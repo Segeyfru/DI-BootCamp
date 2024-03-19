@@ -1,0 +1,1 @@
+SElECT * FROM (SELECT * FROM customer ORDER BY customer_id DESC LIMIT 2)AS last_two ORDER BY customer_id ASC
