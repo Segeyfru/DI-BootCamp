@@ -36,9 +36,9 @@
 -- Task 10
 -- SELECT * FROM film ORDER BY replacement_cost ASC LIMIT 10;
 -- Task 11
--- SELECT * FROM film ORDER BY replacement_cost ASC OFFSET 10 LIMIT 10
+-- SELECT * FROM film ORDER BY replacement_cost ASC OFFSET 10 FETCH FIRST 10 ROW ONLY
 -- Task 12   amount and the date of every payment made by a customer, ordered by their id 
--- SELECT customer.first_name, customer.last_name, payment.amount, payment.payment_date
+-- SELECT customer.first_name||' '|| customer.last_name AS full_name, payment.amount, payment.payment_date
 -- FROM customer
 -- INNER JOIN payment
 -- ON customer.customer_id = payment.customer_id
@@ -49,8 +49,10 @@
 -- SELECT city.city, country.country FROM city INNER JOIN country ON city.country_id = country.country_id;
 -- Task 15 	Write a query to get the customer’s id, names (first and last), 
 -- 			the amount and the date of payment ordered by the id of the staff member who sold them the dvd.
-SELECT customer.customer_id, customer.first_name,customer.last_name,payment.amount, payment.payment_date,payment.staff_id
+SELECT customer.customer_id, customer.first_name||' '||customer.last_name AS customer_full_name,
+payment.amount, payment.payment_date,staff.first_name||' '||staff.last_name
 FROM customer
 INNER JOIN payment
 ON customer.customer_id = payment.customer_id
+INNER JOIN staff ON payment.staff_id = staff.staff_id
 ORDER BY payment.staff_id ASC
