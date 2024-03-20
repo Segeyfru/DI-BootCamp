@@ -11,4 +11,7 @@
 -- SELECT * FROM purchases;
 
 -- 		TASK 3
+
+SELECT * FROM customers
+
 -- 		TASK 4
