@@ -98,7 +98,7 @@ let submit = document.getElementById('submit')
 // }
 
 let ul = document.getElementsByClassName('usersAnswer')
-console.log(ul);
+// console.log(ul);
 submit.onclick = function saveInputs(e){
     e.preventDefault(); 
     let fname = document.getElementById('fname').value;
