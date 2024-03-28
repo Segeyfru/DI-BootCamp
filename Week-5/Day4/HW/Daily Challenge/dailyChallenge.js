@@ -16,6 +16,9 @@ shuffle.addEventListener('click', getStory)
 
 function getInput(e) {
     e.preventDefault();
+    if(!checker()){
+        return
+    }
     noun = form.elements.noun.value;
     adjective = form.elements.adjective.value;
     person = form.elements.person.value;
@@ -23,6 +26,27 @@ function getInput(e) {
     place = form.elements.place.value;
     cleanInput()
     getStory(e)
+}
+function checker(){
+    if(form.elements.noun.value == 0){
+        
+        form.elements.noun.value = prompt('You need to write noun')
+        return false
+    }else if(form.elements.adjective.value == 0){
+        form.elements.adjective.value = prompt('You need to write adjective')
+        return false
+    }else if(form.elements.person.value == 0){
+        form.elements.person.value = prompt('You need to write person')
+        return false
+    }else if(form.elements.verb.value == 0){
+        form.elements.verb.value = prompt('You need to write verb')
+        return false
+    }else if(form.elements.place.value == 0){
+        form.elements.place.value = prompt('You need to write place')
+        return false
+    }else{
+        return true
+    }
 }
 function getStory(e) {
     e.preventDefault();
