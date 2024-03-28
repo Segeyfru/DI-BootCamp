@@ -4,6 +4,9 @@ let pad = document.body.firstElementChild.lastElementChild;
 let getColorFrom
 let mouseDown = false
 let clear = document.createElement("button");
+
+body.addEventListener('mousedown',mouseDownF)
+body.addEventListener('mouseup',mouseUpF)
 clear.innerHTML = "Clear";
 clear.onclick = function clear(e) {
     e.preventDefault();
@@ -45,8 +48,8 @@ for(let i = 0; i < 3600;i++){
     div_pad.style.margin = '1px'
     div_pad.style.backgroundColor = 'white'
     div_pad.addEventListener('click', painting)
-    // div_pad.addEventListener('mousedown',mouseDownF)
-    // div_pad.addEventListener('mouseup',mouseUpF)
+    div_pad.addEventListener('mousedown',mouseDownF)
+    div_pad.addEventListener('mouseup',mouseUpF)
     div_pad.addEventListener('mouseover', paintingMouse)
     pad.appendChild(div_pad)
 

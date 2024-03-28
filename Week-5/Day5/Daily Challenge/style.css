@@ -39,6 +39,7 @@ input:focus, textarea:focus{
     padding: 30px;
     
     text-align: left;
+    position: relative;
 }
 ul{
     list-style: none;
@@ -66,4 +67,12 @@ li{
 .checked{
     color: red;
     text-decoration: line-through;
+}
+.btn{
+    position: absolute;
+    color: red;
+    border: 0;
+    font-weight: 400;
+    font-size: 1.5rem;
+    right: 30px;
 }
