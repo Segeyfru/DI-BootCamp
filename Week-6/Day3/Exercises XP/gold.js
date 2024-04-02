@@ -10,16 +10,19 @@
 
 // Exercise 2
 
-// function keysAndValues(obj){
-//     let arr = [];
-//     let key = Object.keys(obj)
-//     let values = Object.values(obj)
-//     arr.push(key)
-//     arr.push(values)
-//     return arr
-// }
-// let arr = keysAndValues({ key1: true, key2: false, key3: undefined })
-// console.log(arr);
+function keysAndValues(obj){
+    let arr1 = Object.entries(obj)
+    obj = Object.fromEntries(arr1.sort())
+
+    let arr = [];
+    let key = Object.keys(obj)
+    let values = Object.values(obj)
+    arr.push(key)
+    arr.push(values)
+    return arr
+}
+let arr = keysAndValues({ b: 2,a: 1,  c: 3 })
+console.log(arr);
 
 // Exercise 3
 
