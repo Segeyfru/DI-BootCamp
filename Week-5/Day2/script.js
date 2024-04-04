@@ -63,29 +63,29 @@
 // // ---------------------------------
 // let arr2 = [1,2,3,4,5]
 // console.log(arr2);
-// let colors = ['blue','red','green'] 
-// colors[2] = 'pink'
-// colors.push('green')
-// colors.pop()
-// colors.shift()
-// colors.unshift('brown')
-// colors.splice(0,0, 'yellow', 'orange')
-// let sliced = colors.slice(1,3)
-// console.log(colors);
-// console.log(sliced);
+let colors = ['blue','red','green'] 
+colors[2] = 'pink'
+colors.push('green')
+colors.pop()
+colors.shift()
+colors.unshift('brown')
+colors.splice(0,0, 'yellow', 'orange')
+let sliced = colors.slice(1,3)
+console.log(colors);
+console.log(sliced);
 // ---------------------------------------------------
 
-let obj2 = {
-    key: 'value'
-}
-let car = {
-    owner: 'Nadav',
-    year: 2016,
-    model: 'ford focus',
-    thing: {
-        key: 'value'
-    }
-}
+// let obj2 = {
+//     key: 'value'
+// }
+// let car = {
+//     owner: 'Nadav',
+//     year: 2016,
+//     model: 'ford focus',
+//     thing: {
+//         key: 'value'
+//     }
+// }
 // car.color = 'gold';
 // car.year = 2019
 // delete car.thing;
@@ -97,60 +97,60 @@ let car = {
 
 // ------------------------------
 
-if(car.year > 2022){
-    console.log(`That's a new car`);
-}else if(car.year < 2005){
-    console.log(`That's an old car`);
-} else{
-    console.log(`That's not a new car`);
-}
-
-
-switch(car.owner){
-    case 'gil':
-        console.log(`gil's car`);
-        break
-    case 'Nadav':
-        console.log(`That's Nadav's car`);
-        break
-    case 'fred':
-        console.log(`who's fred anyway`);
-        break
-    default:
-        console.log(`this is default`);
-        break
-}
-
-
-// ----------------------------------------------
-let nums = [48, 16,15,48,84,12];
-
-// for(let i = 0; i < nums.length; i++){
-//     console.log(nums[i] * 2);
+// if(car.year > 2022){
+//     console.log(`That's a new car`);
+// }else if(car.year < 2005){
+//     console.log(`That's an old car`);
+// } else{
+//     console.log(`That's not a new car`);
 // }
 
-// for (let num of nums) {
-//     console.log(num);
+
+// switch(car.owner){
+//     case 'gil':
+//         console.log(`gil's car`);
+//         break
+//     case 'Nadav':
+//         console.log(`That's Nadav's car`);
+//         break
+//     case 'fred':
+//         console.log(`who's fred anyway`);
+//         break
+//     default:
+//         console.log(`this is default`);
+//         break
 // }
 
-// for (const key in car) {
-//     let value = car[key];
-//     console.log(key +' ----- ' + value);
-// }
-let counter = 0
-// while (counter < 10) {
+
+// // ----------------------------------------------
+// let nums = [48, 16,15,48,84,12];
+
+// // for(let i = 0; i < nums.length; i++){
+// //     console.log(nums[i] * 2);
+// // }
+
+// // for (let num of nums) {
+// //     console.log(num);
+// // }
+
+// // for (const key in car) {
+// //     let value = car[key];
+// //     console.log(key +' ----- ' + value);
+// // }
+// let counter = 0
+// // while (counter < 10) {
+// //     console.log(counter);
+// //     coun++
+// //     console.log(counter);
+// // }
+
+// do{
+//     if(counter === 5){
+//         counter++
+//         continue
+//     }
 //     console.log(counter);
-//     coun++
-//     console.log(counter);
-// }
-
-do{
-    if(counter === 5){
-        counter++
-        continue
-    }
-    console.log(counter);
-    counter++
-}while(counter < 10);
+//     counter++
+// }while(counter < 10);
 
 
