@@ -1,5 +1,5 @@
 
-// let users = ['John', 'Mary','Dan','Anne'];
+let users = ['John', 'Mary','Dan','Anne'];
 // const len = arr.length
 
 // for (let index = 0; index < len; index++) {
@@ -30,10 +30,10 @@
 
 // /** some */
 
-// let result = users.some((item) => {
-//     return item === 'Dan';
-// })
-// console.log('result=>', result);
+let result = users.some((item) => {
+    return item === 'Dan';
+})
+console.log('result=>', result);
 
 // /** every */
 
@@ -94,7 +94,7 @@
 // render(user)
 
 /***********************************************************************************************************************************************************************/
-// let numbers = [0,1,1,2,3,5,8]
+let numbers = [0,1,1,2,3,5,8]
 // function newNumbers(arr){
 //     let newArr = [];
 //     for (let index = 0; index < arr.length; index++) {
@@ -107,11 +107,11 @@
 
 // console.log(newNumbers(numbers));
 
-// let newArr = numbers.filter(item => {
-//     return item > 3;
-// })
+let newArr = numbers.filter(item => {
+    return item > 3;
+})
 
-// console.log(newArr);
+console.log(newArr);
 
 
 // let names =['John','Mor','Marry','Or'];
@@ -199,11 +199,11 @@
 
 /** destracturing */
 
-let arr = [1,2,3,4,5,6];
+// let arr = [1,2,3,4,5,6];
 // let a = arr[0];
 // let b = arr[1];
 // let c = arr[2];
 
-let [a,b, ...rest] = arr
+// let [a,b, ...rest] = arr
 
-console.log(a,b,rest);
+// console.log(a,b,rest);
