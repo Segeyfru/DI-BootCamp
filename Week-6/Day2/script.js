@@ -1,5 +1,5 @@
 
-let users = ['John', 'Mary','Dan','Anne'];
+// let users = ['John', 'Mary','Dan','Anne'];
 // const len = arr.length
 
 // for (let index = 0; index < len; index++) {
@@ -30,10 +30,10 @@ let users = ['John', 'Mary','Dan','Anne'];
 
 // /** some */
 
-let result = users.some((item) => {
-    return item === 'Dan';
-})
-console.log('result=>', result);
+// let result = users.some((item) => {
+//     return item === 'Dan';
+// })
+// console.log('result=>', result);
 
 // /** every */
 
@@ -94,7 +94,7 @@ console.log('result=>', result);
 // render(user)
 
 /***********************************************************************************************************************************************************************/
-let numbers = [0,1,1,2,3,5,8]
+// let numbers = [0,1,1,2,3,5,8]
 // function newNumbers(arr){
 //     let newArr = [];
 //     for (let index = 0; index < arr.length; index++) {
@@ -107,11 +107,11 @@ let numbers = [0,1,1,2,3,5,8]
 
 // console.log(newNumbers(numbers));
 
-let newArr = numbers.filter(item => {
-    return item > 3;
-})
+// let newArr = numbers.filter(item => {
+//     return item > 3;
+// })
 
-console.log(newArr);
+// console.log(newArr);
 
 
 // let names =['John','Mor','Marry','Or'];
@@ -158,26 +158,26 @@ console.log(newArr);
 /***********************************************************************************************************************************************************************/
 
 /** FIND */
-// let users =[
-//     {id:1,name:'John',email:'jjj@mail.com'},
-//     {id:2,name:'Mor',email:'mmm@mail.com'},
-//     {id:3,name:'Marry',email:'marry@mail.com'},
-//     {id:4,name:'Or',email:'ooo@mail.com'},
-// ];
-// let user = users.find((item) => {
-//     return item.id === 3;
-// });
-// console.log(user);
+let users = [
+    {id:1,name:'John',email:'jjj@mail.com'},
+    {id:2,name:'Mor',email:'mmm@mail.com'},
+    {id:3,name:'Marry',email:'marry@mail.com'},
+    {id:4,name:'Or',email:'ooo@mail.com'},
+];
+let user = users.find((item) => {
+    return item.id === 3;
+});
+console.log(user);
 
 /** FIND INDEX */
+let arr = [2,8,42,2,4,8,1,8];
 
-// let index = arr.findIndex((item) => {
-//     return item.id === 2
-// })
+let index = arr.findIndex((item) => {
+    return item.id === 2
+})
 
-// console.log(index);
+console.log(index);
 
-// let arr = [2,8,4,4,8,1,8];
 
 // function candles(array){
 //     let max = 0;
