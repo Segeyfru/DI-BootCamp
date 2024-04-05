@@ -17,12 +17,37 @@ function userChar(e){
     pad.classList.remove('hidden')
 }
 
-
+// //                                        /** Computer Turn */
+// function computerTurn(){
+//     let boolean = true
+//     if(!board.includes(-1)){
+//         // showWiner('no')
+//         console.log('no one!');
+//         boolean = false
+//         // return
+//     }
+//     while(boolean){
+//         let compnum = Math.floor(Math.random() * 9)
+//         if(board[compnum] === -1){
+//             board[compnum] = comp;
+//             changeButton(compnum,comp)
+//             break
+//         }
+//     }
+    
+//     if (checkWiner()){
+//         showWiner(checkWiner())
+//         return
+//     }
+// }
+//                                        /** Computer Turn HARD */
 function computerTurn(){
+    let boolean = true
     if(!board.includes(-1)){
-        showWiner('no')
+        console.log('no one!');
+        boolean = false
     }
-    while(true){
+    while(boolean){
         let compnum = Math.floor(Math.random() * 9)
         if(board[compnum] === -1){
             board[compnum] = comp;
@@ -54,8 +79,7 @@ function userPlay(element,index){
 
 function changeButton(index,item){
     let button = document.getElementById(`${index}`)
-    button.innerHTML = item
-    console.log(item);
+    button.innerHTML = item;
 }
 
 
@@ -84,16 +108,12 @@ function checkWiner() {
 }
 
 function restart(e){
-    // e.preventDefault()
     board.fill(-1);
     let pad = document.getElementById('pad')
-    let buttons = pad.getElementsByTagName('button')
-    console.log(buttons);
+    let buttons = pad.getElementsByTagName('button');
     for (const btn of buttons) {
         btn.innerHTML = '';
         btn.style.background = 'rgb(240, 240, 240)'
-        // btn.style.border= '1px solid black'
-        // btn
     }
     document.getElementById('team').style.display = 'block'
     document.getElementById('winer').style.display = 'none'

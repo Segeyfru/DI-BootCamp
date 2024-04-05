@@ -25,8 +25,11 @@ nav h1 {
 }
 #team {
     display: flex;
+    align-items: center;
     font-size: 2rem;
     background-color: rgb(0, 200, 255);
+    border-radius: 3px;
+    padding: 4px 10px;
 }
 #team button {
     font-size: 1.5rem;
@@ -41,9 +44,11 @@ nav h1 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap;
+    flex-wrap: wrap; /* Анимация для плавного перехода */
+}
+.pad{    
     opacity: 1;
-    transition: opacity 1s ease; /* Анимация для плавного перехода */
+    transition: opacity 1s ease;
 }
 #pad button {
     width: 100px;
@@ -78,4 +83,5 @@ nav h1 {
 
 .hidden {
     opacity: 0;
+    transition: opacity 1s ease;
 }
