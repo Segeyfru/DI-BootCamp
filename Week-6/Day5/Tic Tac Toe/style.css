@@ -44,6 +44,7 @@ nav h1 {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    align-content: space-between;
     flex-wrap: wrap; /* Анимация для плавного перехода */
 }
 .pad{    
