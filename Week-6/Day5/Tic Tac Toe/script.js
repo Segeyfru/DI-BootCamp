@@ -68,6 +68,13 @@ function computerTurn(){
         boolean = checkForWinWithOneMatch();
         
     }
+    if(boolean){
+        if(board[4] === -1){
+            board[4]= comp;
+            changeButton(4, comp)
+            boolean = false;
+        }
+    }
     if (boolean){
         console.log('going to block with one match');
         boolean = checkForBlockWithOneMatch();
