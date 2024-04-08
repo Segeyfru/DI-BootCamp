@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .gif{
+            margin: 15px;
+        }
+        .img{
+            width: 210px;
+        }
+    </style>
+    <script src="gifs.js" defer></script>
+
+</head>
+<body>
+    <form onsubmit="handleSubmit(event)">
+        <input type="text" name="tag" placeholder="Searching for...">
+        <input type="submit" value="Submit">
+    </form>
+    <div id="container">
+        <!-- <form onsubmit="deleteDiv(event)" class="gif">
+            <img src="https://cdn.britannica.com/70/234870-050-D4D024BB/Orange-colored-cat-yawns-displaying-teeth.jpg" alt="">
+            <input type="submit" value="Delete">
+        </form> -->
+    </div>
+
+</body>
+</html>
