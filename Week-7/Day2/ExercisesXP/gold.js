@@ -20,7 +20,7 @@ async function fienderGif(){
     }
     
 }
-// fienderGif()
+fienderGif()
 
 /** Exercise 2 */
 
@@ -111,17 +111,28 @@ async function fienderGif(){
 const urls = [
     "https://jsonplaceholder.typicode.com/users",
     "https://jsonplaceholder.typicode.com/posts",
-    "https://jsonplaceholder.typicode.com/albums"
-  ];
+    "https://jsonplaceholdpicode.com/albums"
+];
 
 const getData = async function() {
-    const [ users, posts, albums ] = await urls.map(async(url) => {
-        const resp = await fetch(url);
-        const obj = await resp.json();
-        return obj
-    });
-    console.log('users',await users);
-    console.log('posta',await  posts);
-    console.log('albums', await albums);
+    try{
+        const [ users, posts, albums ] = await Promise.all(urls.map(async(url) => {
+            try{
+                const resp = await fetch(url);
+                const obj = await resp.json();
+                return obj
+            }catch(err){
+                throw Error(err);
+            }
+            
+        }));
+        console.log('users',await users);
+        console.log('posta',await  posts);
+        console.log('albums', await albums);
+    }catch(err){
+        console.log('ooooooops', err);
+        
+    }
 }
+
 getData()
