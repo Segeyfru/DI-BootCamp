@@ -2,26 +2,17 @@ let randomId = -1;
 console.log(randomId);
 const pad = document.getElementById('pad')
 const screen = document.getElementById('screen')
+const waiting = document.getElementById('padWait')
 
-// logAll()
-async function logAll(){
-    const url = `https://pokeapi.co/api/v2/pokemon?limit=10000`;
-    try {
-        const resp = await fetch(url);
-        if (resp.status !== 200) {
-            throw Error(err);
-        }
-        const obj = await resp.json();
-        const result = await obj.results;
-        console.log(result);
-    } catch (err) {
-        console.log("ERROR --> ", err);
-    }
-}
 
-function randomPoc(){
+async function randomPoc(){
     randomId = Math.floor(Math.random() * 1303)
-    createPoc()
+    pad.style.display = 'none'
+    waiting.style.display = 'flex'
+    screen.innerHTML = ''
+    await createPoc()
+    pad.style.display = 'flex'
+    waiting.style.display = 'none'
 }
 
 async function createPoc() {
