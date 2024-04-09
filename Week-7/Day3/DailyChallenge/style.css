@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(https://img.newgrodno.by/wp-content/uploads/1676118738different-currencies-banknotes-background-2021-09-02-19-29-54-utc.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+}
+button{
+    font-size: 2rem;
+    padding: 4px;
+    border-radius: 4px;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+.container{
+    background-color: rgba(0, 0, 0, 0.35);
+    height: 500px;
+    /* width: 400px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    align-items: center;
+    color: white;
+    font-size: 2rem;
+    margin-top: calc((100vh - 500px) / 2);
+}
+h1{
+    margin: 0 15px;
+}
+select{
+    font-size: 1.5rem;
+    width: 400px;
+}
+input{
+    font-size: 1.5rem;
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h1 >Currency Converter</h1>
+    <label for="from">From:</label>
+
+    <select id="from" oninput="countAmount(event)">
+        <option value="USD">USD - United States Dollar</option>
+    </select>
+    <br>
+    <button onclick="switchF(event)" oninput="countAmount(event)"><i class="fa-solid fa-repeat fa-rotate-90" style="color: #ffffff;"></i></button>
+
+    <label for="to">To:</label>
+
+    <select id="to" oninput="countAmount(event)">
+        <option value="ILS">ILS - Israeli New Shekel</option>
+    </select>
+
+    <br>
+    <label for="amount">Amount:</label>
+    <form onsubmit="countAmount(event)" oninput="countAmount(event)" action="">
+        <input type="number" name="convert" value="1" >
+        <input type="submit" value="Convert">
+        <br>
+    </form>
+    <div style=" width: 400px" id="sum"> Amount:</div>
+    
+    </div>
+</body>
+</html>
