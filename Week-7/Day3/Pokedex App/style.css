@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#logo{
+    margin: 25px;
+    /* float: left; */
+    position: relative;
+}
+#pokedex{
+    /* float: right; */
+    background-image: url(./pokedex.png);
+    background-size: contain;
+    width: 920px;
+    height: 634px;
+    /* width: 600px;
+    height: 420px; */
+    position: relative;
+    /* top: 25px; */
+
+    margin: -150px 300px;
+}
+#screen{
+    /* border: 4px solid red; */
+    position: absolute;
+    top: 38px;
+    left: 287px;
+    width: 310px;
+    height: 230px;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+}
+#pad{
+    
+    /* border: 4px solid red; */
+    position: absolute;
+    top: 370px;
+    left: 287px;
+    width: 310px;
+    height: 230px;
+    padding: 15px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+#pad h1{
+    text-align: center;
+}
+#green{
+    
+    /* border: 4px solid red; */
+    background-color: rgba(59, 240, 9, 0.259);
+    border-radius: 50%;
+    position: absolute;
+    top: 440px;
+    left: 735px;
+    width: 75px;
+    height: 75px;
+}
+#left{
+    /* border: 4px solid red; */
+    background-color: rgba(114, 114, 114, 0.455);
+    position: absolute;
+    top: 460px;
+    left: 145px;
+    width: 47px;
+    height: 35px;
+}
+#right{
+    /* border: 4px solid red; */
+    background-color: rgba(114, 114, 114, 0.455);
+    position: absolute;
+    top: 460px;
+    left: 208px;
+    width: 47px;
+    height: 35px;
+}
+#instructions{
+    float: right;
+    margin: 25px 50px ;
+    font-size: 1.2rem;
+    width: 300px;
+    position: relative;
+    top: 75px;
+    right: 100px;
+}

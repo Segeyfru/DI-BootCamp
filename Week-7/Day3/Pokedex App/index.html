@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Pokede</title>
+        <link rel="stylesheet" href="style.css" />
+        <script src="script.js" defer></script>
+    </head>
+    <body>
+        <img id="logo" src="./logo.png" alt="" />
+        <div id="instructions">
+            <h3>How to use:</h3>
+            <p>1- Press the green button to get a random Pokémon</p>
+            <p>
+                2- Press the left and right buttons to see previous and next
+                Pokémon.
+            </p>
+        </div>
+        <div id="pokedex">
+            <div id="screen">
+                <!-- <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/445.png" alt=""> -->
+            </div>
+            <div id="pad">
+                <h1>LET START</h1>
+            </div>
+            <button onclick="randomPoc()" id="green"></button>
+            <button onclick="getLeftPoc(event)" id="left"></button>
+            <button onclick="getRightPoc(event)" id="right"></button>
+        </div>
+    </body>
+</html>
