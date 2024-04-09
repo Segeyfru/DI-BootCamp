@@ -57,7 +57,7 @@ function showPoc(obj){
     screen.innerHTML = ` <img src="${img}" alt="">`
     pad.innerHTML = `
     <h1>${newName}</h1>
-    <h3>Pokemon n°: ${randomId - 1}</h3>
+    <h3>Pokemon n°: ${obj.id}</h3>
     <h3>Height: ${obj.height}</h3>
     <h3>Weight: ${obj.weight}</h3>
     <h3>Type: ${type}</h3>`
