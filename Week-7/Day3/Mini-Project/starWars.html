@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+    <script src="starWars.js" defer></script>
+</head>
+<body>
+    <div class="logo">
+        <img src="./Star-wars-4-9-2024 (1).png" alt="">
+    </div>
+
+    <div id="container">
+        <h2 id="name">luke</h2>
+        <p>height</p>
+        <p>gender</p>
+        <p>birth year</p>
+        <p>home world</p>
+    </div>
+
+    <div id="containerWait" class="fa-3x">
+        <i class="fa-solid fa-spinner fa-spin-pulse"></i>
+        <p>Loading...</p>
+    </div>
+
+    <button id="btn" onclick="refresh(event)">Find Someone</button>
+</body>
+</html>
