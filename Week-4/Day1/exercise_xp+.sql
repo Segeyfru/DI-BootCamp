@@ -16,13 +16,13 @@
 
 -- SELECT * FROM students
 
-SELECT * FROM students WHERE stud_id = '2';
-SELECT *FROM students WHERE first_name = 'Marc' AND last_name = 'Benichou';
+SELECT * FROM students WHERE stud_id = 2;
+SELECT * FROM students WHERE first_name = 'Marc' AND last_name = 'Benichou';
 SELECT * FROM students WHERE first_name = 'Marc' OR last_name = 'Benichou';
 SELECT * FROM students WHERE first_name LIKE '%a%';
 SELECT * FROM students WHERE first_name ILIKE 'a%';
-SELECT * FROM students WHERE first_name ILIKE '%a';
-SELECT * FROM students WHERE LIKE '%a_'
+SELECT * FROM students WHERE first_name ILIKE '%a_';
+SELECT * FROM students WHERE first_name LIKE '%a'
 SELECT * FROM students WHERE stud_id = 1 OR stud_id = 3;
 SELECT * FROM students WHERE birth_date >= '01/01/2000';
 
