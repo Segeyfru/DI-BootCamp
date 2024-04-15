@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Game</title>
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div id="container">
+        <div id="Quiz">
+            <h2>Question:</h2>
+            <h3 id="question"></h3>
+        </div>
+        <form onsubmit="getAnswer(event)">
+            <label for="answer">Answer:</label>
+            <input id="answer" type="text" name="answer" placeholder="Answer">
+            <input type="submit" value="Send" >
+        </form>
+    </div>
+</body>
+
+</html>
