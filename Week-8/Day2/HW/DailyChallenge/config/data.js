@@ -1,4 +1,4 @@
-const questions = [
+const questions3 = [
   {
     question: "What is the capital of France?",
     answer: "Paris",
@@ -11,7 +11,20 @@ const questions = [
     question: "What is the largest mammal in the world?",
     answer: "Blue whale",
   },
+];
+const questions11 = [
   {
+    question: "What is the capital of France?",
+    answer: "Paris",
+  },
+  {
+    question: "Which planet is known as the Red Planet?",
+    answer: "Mars",
+  },
+  {
+    question: "What is the largest mammal in the world?",
+    answer: "Blue whale",
+  },{
     question: "In which year did the Titanic sink?",
     answer: "1912",
   },
@@ -45,4 +58,5 @@ const questions = [
   },
 ];
 
-module.exports = {questions}
+
+module.exports = {questions3, questions11}

@@ -8,7 +8,7 @@ app.use(express.json());
 
 app.listen(3000, (req, res) => console.log('Run on 3000'));
 
-app.use('/quiz', express.static(__dirname + '/public'))
+app.use('/', express.static(__dirname + '/public'))
 
 
 
