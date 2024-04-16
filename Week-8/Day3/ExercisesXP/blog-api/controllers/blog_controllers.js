@@ -35,7 +35,7 @@ const createPost =(req,res)=>{
 const updatePostById =(req,res)=>{
     const {id} = req.params;
     const {title,content} = req.body
-    _getPostById(id,title,content)
+    _updatePostById(id,title,content)
     .then(data => res.json(data))
     .catch(err => {
         res.status(404).json({msg:'something went wrong'})
@@ -44,7 +44,7 @@ const updatePostById =(req,res)=>{
 };
 
 const deletePostById = (req,res) =>{
-    const { id} = req.psrams;
+    const { id } = req.params;
     _deletePostById(id)
     .then(data => res.json(data))
     .catch(err => {
