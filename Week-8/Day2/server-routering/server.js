@@ -12,7 +12,7 @@ app.listen(3001, () => {
   console.log("run on 3001");
 });
 
-app.use(auth)
+// app.use(auth)
 
 app.use('/users',logger)
 

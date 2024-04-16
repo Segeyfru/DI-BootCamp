@@ -58,5 +58,7 @@ const questions11 = [
   },
 ];
 
+questions3[0].score = 1
+console.log(questions3);
 
 module.exports = {questions3, questions11}

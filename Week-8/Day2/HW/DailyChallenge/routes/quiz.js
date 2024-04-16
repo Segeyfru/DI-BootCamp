@@ -18,7 +18,14 @@ route.get('/', (req, res) => {
 
 route.post('/', (req, res) => {
     const { question, answer } = req.body;
-    let questionInList = questions
+    let questionInList = questions.find(item => item.question == question)
+    if(questionInList.answer == answer){
+        questionInList.
+        res.json('score++')
+    }else{res.json('mistake')}
+})
+route.get('/score/', (req,res)=>{
+
 })
 
 module.exports = route
