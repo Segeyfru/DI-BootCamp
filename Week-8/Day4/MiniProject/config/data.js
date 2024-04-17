@@ -1,11 +1,8 @@
 const knex = require('knex')
 
-const dotenv = require('dotenv')
+// const dotenv = require('dotenv')
 
-const { PGHOST, PGDATABASE, PGUSER, PGPASSWORD, PGPORT } = process.env;
-
-
-
+// const { PGHOST, PGDATABASE, PGUSER, PGPASSWORD, PGPORT } = process.env;
 
 const db = knex({
     client: 'pg',
