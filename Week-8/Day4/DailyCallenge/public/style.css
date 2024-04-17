@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    padding: 50px;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+form{
+    /* display: flex;
+    flex-direction: column; */
+    width: 300px;
+    /* border: 1px solid black; */
+text-align: center;
+padding: 10px;
+}
+label{
+    display: inline-block;
+    width: 100px;
+    text-align: start;
+    padding: 4px;
+    
+}
+button{
+    padding: 2px 4px;
+    margin-top: 8px;
+
+}

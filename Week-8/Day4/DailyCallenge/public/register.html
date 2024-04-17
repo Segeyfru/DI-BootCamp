@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="./scriptRegister.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="./register.html">Register</a>
+            <a href="./index.html">Login</a>
+        </nav>
+    </header>
+    <h1>Register</h1>
+    <form onsubmit="createUser(event)">
+        <label for="first_name">Frist name:  </label>
+        <input type="text" name="first_name" id="first_name" placeholder="Frist name..."><br>
+        <label for="last_name">Last name:  </label>
+        <input type="text" name="last_name" id="last_name" placeholder="Lrist name..."><br>
+        <label for="email">Email:  </label>
+        <input type="email" name="email" id="email" placeholder="Email..."><br>
+        <label for="username">Username:  </label>
+        <input type="text" name="username" id="username" placeholder="username..."><br>
+        <label for="password">Password:  </label>
+        <input type="password" name="password" id="password" placeholder="Password"><br>
+        <button type="submit" >Register</button>
+    </form>
+    <div id="login"></div>
+
+
+</body>
+</html>
