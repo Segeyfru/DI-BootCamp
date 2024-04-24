@@ -33,7 +33,26 @@ async function checkIn(e) {
         })
 }
 
-function clearForm(){
-    form.email.value = '';
-    form.password.value = '';
-}
+// function listOfMyusers(e){
+//     e.preventDefault()
+
+//     fetch(`http://localhost:3001/users`, {
+//         method: 'GET',
+//         headers: {
+//             'Content-Type': 'application/json'
+//         },
+//         body: JSON.stringify({ email: user_email, password: user_password })
+//     })
+//     .then(response => {
+//         if (!response) {
+//             login.innerHTML = `Network response was not ok`
+//             throw new Error('Network response was not ok')
+//         } else {
+//             return JSON.parse(response)
+//         }
+//     })
+//     .then(data => {
+//         console.log(data);
+//         login.innerHTML = data
+//     })
+// }

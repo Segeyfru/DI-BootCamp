@@ -5,7 +5,10 @@ const checkUser = async(req,res) =>{
     const {email, password} = req.body
 
     const data = await _checkPassword( email)
-    const correct = await checkPassword(password,data[0].password)
+    console.log(data);
+    let id = data.id
+    req.userId = id
+    const correct = await checkPassword(password,data.password)
     if(correct){
         res.status(200).json({password: 'correct'})
     }else{
