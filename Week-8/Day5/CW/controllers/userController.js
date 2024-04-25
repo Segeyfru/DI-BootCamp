@@ -21,6 +21,7 @@ module.exports = {
       res.status(500).json({ error: "Internal server error" });
     }
   },
+  
   loginUser: async (req, res) => {
     const { email, password } = req.body;
 
