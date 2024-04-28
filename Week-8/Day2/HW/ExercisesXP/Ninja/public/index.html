@@ -1,17 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
 </head>
+
 <body>
-    <form action="">
-        <label for="name"></label>
-        <input type="text" name="name" id="">
-        <label for="emojis"></label>
-        <select name="emojis" id=""></select>
-    </form>
+    <div class="container">
+        <form onsubmit="greeting(event)">
+            <div><label for="name">Name:</label>
+                <input type="text" name="name" id="">
+            </div>
+            <div>
+                <label for="emojis">Emoji:</label>
+                <select name="emojis" id="">
+                    <option style="font-size: 16px;" value="">...</option>
+                </select>
+            </div>
+            <div>
+                <input type="submit" value="Submit">
+            </div>
+        </form>
+        <div id="greet">
+
+
+        </div>
+    </div>
 </body>
+
 </html>
