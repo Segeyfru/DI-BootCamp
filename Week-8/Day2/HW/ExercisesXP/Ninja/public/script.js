@@ -25,20 +25,22 @@ const greeting = async(e)=>{
         greet.style.display = 'block'
         greet.innerHTML = `<h2>Hello, ${user_emoji.name} - ${user_emoji.emoji_face}</h2>`
     } catch (err){
-        console.log(err);
+        console.loformFirst.emojis.value
+        const name = formFirst.name.valueg(err);
     }
+    formFirst.emojis.value = ''
+    formFirst.name.value = ''
+    setTimeout(function() {
+        greet.style.display = 'none'
+        formFirst.style.display = 'block'
+    }, 5000);
 }
 
 async function listOfEmojis(){
-    // e.preventDefault()
-    // formFirst.emojis.innerHTML = ''
     try{
         const emojis = await fetchFunc(url)
         const randomEmoji = getRandomObjects(emojis, 10)
         for(let item of randomEmoji){
-            // let option = document.createAttribute('option')
-            // option.innerHTML = item.emoji_face
-            // option.value = item.id
             formFirst.emojis.innerHTML += `<option value="${item.id}">${item.emoji_face}</option>`
         }
 

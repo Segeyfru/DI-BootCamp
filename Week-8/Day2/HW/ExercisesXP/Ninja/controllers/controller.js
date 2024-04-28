@@ -12,8 +12,6 @@ const getRandomEmoji =async (req,res) =>{
         }
         // console.log(randEmojis);
         res.json(randEmojis)
-        let x =  JSON.stringify(randEmojis)
-        console.log( x);
     } catch (error) {
         console.log(error);
         res.status(400).send(error)       

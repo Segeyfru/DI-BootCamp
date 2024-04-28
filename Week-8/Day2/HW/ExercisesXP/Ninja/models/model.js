@@ -1,7 +1,6 @@
 const {db} = require('../config/data.js')
 
 const _getRandomEmoji = async() =>{
-    console.log('hi');
     try {
         const allEmojis = await db('emoji').select('id','emoji_face')
         return allEmojis
