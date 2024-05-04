@@ -2,3 +2,4 @@ venv/
 config.py
 **/node_modules
 **.env
+/ztest-example
