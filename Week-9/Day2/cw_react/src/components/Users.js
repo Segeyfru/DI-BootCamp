@@ -1,8 +1,8 @@
 import './Users.css'
 
-import Button from '@mui/material/Button';
 const Users = (props) => {
-    const {info} = props
+    // const {info} = props
+    console.log(props);
     // const style = {
     //     display:'inline-block',
     //     border: '1px solid black',
@@ -17,10 +17,10 @@ const Users = (props) => {
     // }
     return(
         <div /**style={style}*/ className='tc dib br3 pa3 ma2 bg-light-green grow shadow-5'>
-        <img src={`https://robohash.org/${info.id}?size=150x150`}></img>
-        <h2>{info.name}</h2>
-        <h3>{info.username}</h3>
-        <h3>{info.email}</h3>
+        <img src={`https://robohash.org/${props.id}?size=150x150`}></img>
+        <h2>{props.name}</h2>
+        <h3>{props.username}</h3>
+        <h3>{props.email}</h3>
         </div>
     );
 };
