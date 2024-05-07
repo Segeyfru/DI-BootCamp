@@ -26,7 +26,7 @@ function App() {
       <button onClick={()=>{setShow(!show)}}>Show</button>
       <button onClick={()=>{setShow2(!show2)}}>Show2</button>
       {
-        show || show2 || null || console.log('pidr')
+        show || show2 || null || <Test />
       }
     </>
   )
