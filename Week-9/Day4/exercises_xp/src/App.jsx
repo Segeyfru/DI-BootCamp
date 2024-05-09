@@ -22,8 +22,8 @@ const sendData = async (e) => {
   }
 
   try {
-    const res = await fetch(url)
-    const data = await res.json()
+    const res = await fetch(url,options)
+    const data = await res
     console.log(data);
   } catch (error) {
     console.log(error);
