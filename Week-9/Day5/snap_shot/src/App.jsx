@@ -11,7 +11,9 @@ import Logo from './components/Logo';
 
 const Root = () => {
   const [query, setQuery] = useState('Mountain')
+  const [count, setCount] =useState(20)
   const navigate = useNavigate()
+  
   useEffect(()=>{
 console.log(query);
   },[query])
@@ -19,7 +21,7 @@ console.log(query);
   const searchImg =(e)=>{
     e.preventDefault()
   
-    navigate(`/${query}`)
+    navigate(`/${query}/${count}`)
   }
 
   return (
@@ -27,14 +29,23 @@ console.log(query);
       <h1>SnapShot</h1>
       <form action="" onSubmit={(e) =>searchImg(e)} >
         <input onChange={(e) =>setQuery(e.target.value)} type="text" placeholder="Search..." />
+        <select onChange={(e)=> setCount(parseInt(e.target.value))} name="count" id="">
+          <option value="">How many?</option>
+          <option value="5">5</option>
+          <option value="10">10</option>
+          <option value="15">15</option>
+          <option value="20">20</option>
+          <option value="30">30</option>
+        </select>
         <input type="submit" value="Search" />
+
       </form>
       <header><nav>
         <Link to={'/'}></Link>{' '}
-        <Link to={'/mountains'}>Mountain</Link>{' '}
-        <Link to={'/beaches'}>Beaches</Link>{' '}
-        <Link to={'/birds'}>Birds</Link>{' '}
-        <Link to={'/food'}>Food</Link>{' '}
+        <Link to={`/mountains/${count}`}>Mountain</Link>{' '}
+        <Link to={`/beaches/${count}`}>Beaches</Link>{' '}
+        <Link to={`/birds/${count}`}>Birds</Link>{' '}
+        <Link to={`/food/${count}`}>Food</Link>{' '}
       </nav></header>
       <Outlet />
 
@@ -50,7 +61,7 @@ const router = createBrowserRouter([
     errorElement: <h2>Opps...</h2>,
     children: [
       {
-        path: '/:search',
+        path: '/:search/:count',
         element: <Mountain />
       },
     ]

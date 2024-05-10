@@ -13,13 +13,13 @@ const Mountain = (props) => {
     useEffect(() => {
         getImages()
 
-    }, [query.search])
+    }, [query.search,query.count])
 
     console.log(query);
 
 
     const getImages = async () => {
-        client.photos.search({ query: query.search, per_page: numOfImages })
+        client.photos.search({ query: query.search, per_page: query.count })
             .then(photos => {
                 console.log(photos.photos[0]);
                 setImages(photos.photos)
