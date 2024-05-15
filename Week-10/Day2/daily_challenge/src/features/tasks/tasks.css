@@ -1,0 +1,17 @@
+.task{
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.task h2{
+    margin-right: auto;
+}
+.task button{
+    margin-left: 10px;
+}
+.complited{
+    text-decoration: line-through;
+    color: green;
+}
