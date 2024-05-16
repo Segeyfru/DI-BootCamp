@@ -50,3 +50,6 @@
   margin: 5px;
   color: white;
 }
+.robot:hover {
+  transform: scale(1.1);
+}
