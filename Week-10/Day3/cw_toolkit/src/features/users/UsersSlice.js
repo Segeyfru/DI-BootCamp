@@ -22,7 +22,7 @@ export const usersSlice = createSlice({
     initialState: initialState,
     reducers: {
         adduser: (state, action) => {
-            state.users.push({ id: nanoid(), name: action.payload })
+            state.users.push({ id: nanoid(), name: action.payload})
         },
         addUserPrepare: {
             reducer(state, action) {

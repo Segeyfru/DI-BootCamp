@@ -6,7 +6,9 @@ export const TOGGLE_EDIT = 'toggle_edit'
 import { v4 as uuidv4 } from 'uuid'
 
 const initialState = {
-    tasks: [{ id: 0, name: 'Daily Challenge', isComplited: false, date: '2024-05-14', toggleEdit: false }]
+    tasks: [
+        { id: 0, name: 'Daily Challenge', isComplited: false, date: '2024-05-14', toggleEdit: false },
+    ]
 }
 
 
