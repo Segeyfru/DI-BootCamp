@@ -67,7 +67,8 @@ export const counterSlice = createSlice({
 })
 
 
-export const { increment,
+export const { 
+    increment,
     decrement,
     reset,
     incrementBy,
