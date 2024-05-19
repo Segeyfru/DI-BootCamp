@@ -1,21 +1,16 @@
 import { useState } from 'react'
 import './App.css'
 import Books from './features/books/Books'
+import Tracker from './features/tracker/Tracker'
 
 function App() {
   const [count, setCount] = useState(0)
   
-  const [genre, setGenre] = useState('')
 
   return (
     <>
-    <select onChange={(e)=>setGenre(e.target.value)}>
-      <option value="all">All</option>
-      <option value="fiction">Science Fiction</option>
-      <option value="fantasy">Fantasy</option>
-      <option value="romance">Romance</option>
-    </select>
-      <Books genre={genre}/>
+      {/* <Books /> */}
+      <Tracker />
     </>
   )
 }
