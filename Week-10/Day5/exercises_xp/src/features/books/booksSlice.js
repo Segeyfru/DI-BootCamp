@@ -77,7 +77,9 @@ export const booksSlice = createSlice({
 
 })
 export const state = (state) => state.booksReducer
+
 export const {
 
 } = booksSlice.actions
+
 export default booksSlice.reducer
