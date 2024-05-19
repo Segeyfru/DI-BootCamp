@@ -65,6 +65,5 @@ export const {
 } = postsSlice.actions
 
 export const state = (state) => state.postsReducer
-// export const post = (state) => state.postsReducer.status
 
 export default postsSlice.reducer
