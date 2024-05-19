@@ -1,5 +1,4 @@
 import { useEffect } from 'react';
-import { getPosts, posts, status} from './postsSlice'
 import {useDispatch, useSelector} from 'react-redux'
 import Emoji from '../emoji/Emoji';
 import { usePostsSelector , useFetchPosts, usePostsStatus} from './postsHooks';

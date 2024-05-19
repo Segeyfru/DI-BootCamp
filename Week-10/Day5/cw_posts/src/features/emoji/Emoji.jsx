@@ -1,7 +1,7 @@
 
 import { useDispatch, useSelector } from 'react-redux'
 import { memo } from 'react';
-import { posts ,addReaction} from '../posts/postsSlice';
+import {addReaction} from '../posts/postsSlice';
 
 
 const Emoji = (props) => {

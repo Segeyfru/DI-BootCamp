@@ -64,7 +64,7 @@ export const {
     addReaction
 } = postsSlice.actions
 
-export const posts = (state) => state.postsReducer.posts
-export const status = (state) => state.postsReducer.status
+export const state = (state) => state.postsReducer
+// export const post = (state) => state.postsReducer.status
 
 export default postsSlice.reducer
