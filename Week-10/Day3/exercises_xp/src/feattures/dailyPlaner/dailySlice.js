@@ -1,10 +1,10 @@
 import { createSlice, nanoid } from '@reduxjs/toolkit'
-import { isComplited } from '../tasks/tasksSlice'
+import { isCompleted } from '../tasks/tasksSlice'
 
 
 const initialState = {
     tasks: [
-        { id: 0, name: 'Daily Challenge', isComplited: false, date: '2024-05-14', toggleEdit: false },
+        { id: 0, name: 'Daily Challenge', isCompleted: false, date: '2024-05-14', toggleEdit: false },
     ],
     all: false
 }
@@ -19,11 +19,11 @@ export const dailySlice = createSlice({
 
         addTask: (state, action) => {
             console.log(action.payload);
-            state.tasks.push({ id: nanoid(), name: action.payload.name, isComplited: false, date: action.payload.date, toggleEdit: false })
+            state.tasks.push({ id: nanoid(), name: action.payload.name, isCompleted: false, date: action.payload.date, toggleEdit: false })
         },
-        taskIsComplited: (state, action) => {
+        taskIsCompleted: (state, action) => {
             state.tasks.map(task => {
-                if (task.id === action.payload) return task.isComplited = !task.isComplited
+                if (task.id === action.payload) return task.isCompleted = !task.isCompleted
                 return task
             })
         },
@@ -60,7 +60,7 @@ export const {
     addTask,
     changeToggle,
     changeEdit,
-    taskIsComplited,
+    taskIsCompleted,
     deleteTask,
     showAll
 } = dailySlice.actions

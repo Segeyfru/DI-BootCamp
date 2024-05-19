@@ -1,7 +1,7 @@
 import { useTasksSelector, useCategorySelector, useCompletedSelector } from "./trackerHooks"
 import { useDispatch } from 'react-redux'
 import { useState, useRef } from "react"
-import { addTaskPrepare, deleteTask, saveChanges, changeToggleEdit, compliteTask } from "./trackerSlice"
+import { addTaskPrepare, deleteTask, saveChanges, changeToggleEdit, completeTask } from "./trackerSlice"
 
 
 const Tracker = (props) => {
@@ -9,7 +9,7 @@ const Tracker = (props) => {
     const dispatch = useDispatch()
     const [selector, setSelector] = useState('all')
     const [category, setCategory] = useState('')
-    const complited = useCompletedSelector()
+    const completed = useCompletedSelector()
     const categoryList = useCategorySelector()
 
     const newTask = (e) => {
@@ -19,9 +19,9 @@ const Tracker = (props) => {
 
     const showTask = (task) => {
         return (
-            <div key={task.id} className={task.isComplited ? 'task complited' : 'task'}>
+            <div key={task.id} className={task.isCompleted ? 'task completed' : 'task'}>
                 <div className="task1">
-                    <h2 onClick={() => dispatch(compliteTask(task.id))}> {task.name}</h2>
+                    <h2 onClick={() => dispatch(completeTask(task.id))}> {task.name}</h2>
                     <p>{task.category}</p>
                 </div>
                 <div>
@@ -67,11 +67,11 @@ const Tracker = (props) => {
                 </>
             )
         }
-        if (selector === 'complited') {
+        if (selector === 'completed') {
             return (
                 <>
                     {
-                        complited.map(task => {
+                        completed.map(task => {
                             return (
                                 task.toggleEdit ? changeTask(task) : showTask(task)
                             )
@@ -119,7 +119,7 @@ const Tracker = (props) => {
                             <input type="submit" />
                         </form>
                         <button onClick={() => setSelector('category')}>By Category</button>
-                        <button onClick={() => setSelector('complited')}>Complited</button>
+                        <button onClick={() => setSelector('completed')}>Completed</button>
                         <button onClick={() => setSelector('all')}>All</button><br />
                         {selectSelector()}
 

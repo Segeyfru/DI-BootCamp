@@ -9,7 +9,7 @@ export const useTasksSelector = () =>{
 }
 
 export const useCompletedSelector = () =>{
-    const completedTasks = createSelector(state, (state) =>state.tasks.filter(task=> task.isComplited===true))
+    const completedTasks = createSelector(state, (state) =>state.tasks.filter(task=> task.isCompleted===true))
     return useSelector(completedTasks)
 }
 
