@@ -42,53 +42,50 @@ console.log(add('2', '3'));
 
 // Exercise 6
 
-const getDetails = (name:string, age:number) => {
-    let greeting: [string,number,string]= [name,age,`Hello ${name}`]
+const getDetails = (name: string, age: number) => {
+    let greeting: [string, number, string] = [name, age, `Hello ${name}`]
     return greeting
 }
-console.log(getDetails('Jack',27));
+console.log(getDetails('Jack', 27));
 
 // Exercise 7
-type Person ={
-    name:string
-    age:number
-}
-const createPerson =(name:string,age:number) =>{
-    let newUser:Person={name,age}
+
+const createPerson = (name: string, age: number): { name: string, age: number, } => {
+    let newUser = { name, age }
     return newUser
 }
-console.log(createPerson('Jack',27));
+console.log(createPerson('Jack', 27));
 
 // Exercise 8
 
 const element = document.querySelector('button')
 const button = element as HTMLButtonElement
-if(button){
+if (button) {
     button.innerText = 'Click me!'
-    button.addEventListener('click',()=>{
+    button.addEventListener('click', () => {
         alert('Button was clicked')
     })
 
-}else{
+} else {
     console.log('Button was not found');
-    
+
 }
 
 // Exercise 9
 
-const getAction  = (role:string)=>{
-    switch(role){
+const getAction = (role: string) => {
+    switch (role) {
         case 'admin':
             console.log('Welcome Home, Master');
             break
         case 'headmaster':
             console.log('Peeves greets you, shcool headmaster');
             break
-            
+
         default:
             console.log('Welcome');
             break
-             
+
     }
 }
 getAction('headmaster')

@@ -41,6 +41,7 @@ const getDetails = (name, age) => {
     return greeting;
 };
 console.log(getDetails('Jack', 27));
+// Exercise 7
 const createPerson = (name, age) => {
     let newUser = { name, age };
     return newUser;
