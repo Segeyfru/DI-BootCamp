@@ -82,7 +82,7 @@ const getAction  = (role:string)=>{
             console.log('Welcome Home, Master');
             break
         case 'headmaster':
-            console.log('Pivs greets you, shcool headmaster');
+            console.log('Peeves greets you, shcool headmaster');
             break
             
         default:

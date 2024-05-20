@@ -65,7 +65,7 @@ const getAction = (role) => {
             console.log('Welcome Home, Master');
             break;
         case 'headmaster':
-            console.log('Pivs greets you, shcool headmaster');
+            console.log('Peeves greets you, shcool headmaster');
             break;
         default:
             console.log('Welcome');
