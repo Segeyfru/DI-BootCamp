@@ -1,5 +1,4 @@
 
-
 const validateUnionType = (value: any, allowedTypes: string[]) => {
 
    return allowedTypes.some(item => item === typeof value)
