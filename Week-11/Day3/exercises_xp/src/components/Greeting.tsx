@@ -26,7 +26,7 @@ const Greeting = ({ name }: GreetingProps) => {
             {
                 users.map((user: UsersFetch,i:number)=>{
                     return(
-                        <div>
+                        <div key={i}>
                             <h2>{user.name}</h2>
                             <h4>{user.email}</h4>
                             <p>{user.address.street}, {user.address.suite}</p>
