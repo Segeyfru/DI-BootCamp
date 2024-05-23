@@ -390,7 +390,7 @@ const username3 = new StateObject<string[]>(['st', 'wew'])
 username3.state = ['wd', 'wd']
 console.log(username3.state);
 
-// intersections type
+// :ections type
 
 type Admin = {
     name: string,
