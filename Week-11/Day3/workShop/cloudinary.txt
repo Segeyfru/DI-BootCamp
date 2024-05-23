@@ -1,0 +1,11 @@
+CLOUDINARY_URL=cloudinary://377352267275471:9ojg7GrfggQfjq9OyxloUJyC2w4@dsqfnvwzs
+
+
+documentation:
+https://cloudinary.com/documentation/transformation_reference#e_loop
+
+JS:
+https://cloudinary.com/documentation/javascript_quick_start
+
+Python:
+https://cloudinary.com/documentation/python_quickstart
