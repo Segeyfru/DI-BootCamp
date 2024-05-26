@@ -3,12 +3,15 @@ import { Item } from "../../model/ListItem"
 import TaskEdit from "./TaskEdit"
 import TaskRemove from "./TaskRemove"
 import { useCheckTask,useEditTask } from "./hooks"
+import { memo } from "react"
 
 type TasksItemProps = {
     task: Item,
 }
 
 const TasksItem = ({ task }: TasksItemProps) => {
+    console.log('taskItem render');
+    
     const edit = useEditTask();
     const check = useCheckTask();
     const handelClick = () => {
@@ -28,4 +31,6 @@ const TasksItem = ({ task }: TasksItemProps) => {
         </>
     )
 }
-export default TasksItem
+
+const MemorizedTaskItem = memo(TasksItem)
+export default MemorizedTaskItem
