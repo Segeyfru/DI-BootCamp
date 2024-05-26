@@ -2,26 +2,29 @@
 import { Item } from "../../model/ListItem"
 import TaskEdit from "./TaskEdit"
 import TaskRemove from "./TaskRemove"
-import { useCheckTask } from "./hooks"
+import { useCheckTask,useEditTask } from "./hooks"
 
 type TasksItemProps = {
     task: Item,
 }
 
 const TasksItem = ({ task }: TasksItemProps) => {
+    const edit = useEditTask();
     const check = useCheckTask();
     const handelClick = () => {
         check(task.id)
     }
     return (
         <>
-            <div>
-                {
-                    task.edit ? null : <span className={task.checked ? 'complited' : ''} onClick={handelClick}>{task.item}</span>
-                }
-                <TaskEdit task={task} />
-                <TaskRemove id={task.id} />
-            </div>
+            {
+                task.edit ?
+                    <TaskEdit task={task} /> :
+                    <div>
+                        <span className={task.checked ? 'complited' : ''} onClick={handelClick}>{task.item}</span>
+                        <button onClick={() => edit(task.id)}>Edit</button>
+                        <TaskRemove id={task.id} />
+                    </div>
+            }
         </>
     )
 }

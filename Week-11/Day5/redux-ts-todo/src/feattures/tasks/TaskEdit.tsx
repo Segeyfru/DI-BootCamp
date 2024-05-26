@@ -1,31 +1,30 @@
 import { memo, useRef } from "react"
 import { Item } from "../../model/ListItem"
-import { useChangeTask, useEditTask } from "./hooks"
+import { useChangeTask} from "./hooks"
+import TaskRemove from "./TaskRemove"
 
 type TaskEditProps = {
     task: Item,
     // item:string|null|undefined
 }
 const TaskEdit = ({ task }: TaskEditProps) => {
-    const editHook = useEditTask();
     const changeTaskHook = useChangeTask()
     const inputRef = useRef<HTMLInputElement>(null)
 
-    const changeTask = (id:string) => {
+    const changeTask = (id: string) => {
         const task: string = inputRef.current?.value.trim() || '';
-        if(task === '') return
-        changeTaskHook(task,id)
-        // inputRef.current!.value = ""
-        
-        // editHook(id)
+        if (task === '') return
+        changeTaskHook(task, id)
+        inputRef.current!.value =''
     }
     return (
         <>
-            {
-                task.edit ? <input type="text" ref={inputRef} defaultValue={task.item} /> : null
-            }
+            <div>
+                <input className={task.checked ? 'complited' : ''} ref={inputRef} defaultValue={task.item} />
+                <button onClick={() => changeTask(task.id)}>Save</button>
+                <TaskRemove id={task.id} />
+            </div>
 
-            <button onClick={task.edit ? () => changeTask(task.id) : () => editHook(task.id)}>{task.edit ? 'Save' : 'Edit'}</button>
         </>
     )
 }
