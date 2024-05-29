@@ -1,5 +1,5 @@
 venv/
 config.py
 **/node_modules
-**.env
+.env
 /ztest-example
