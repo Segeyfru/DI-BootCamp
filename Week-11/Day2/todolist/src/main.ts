@@ -50,7 +50,7 @@ if (taskForm) {
 
 const createListTasks = ()=>{
   listTasksUl.innerHTML =''
-  tasksList.forEach((task ,i)=>{
+  tasksList.forEach((task )=>{
     listTasksUl.innerHTML += `<li class="item">
       <input type="checkbox" id=${task.id} >
       <label for="2">${task.name}</label>

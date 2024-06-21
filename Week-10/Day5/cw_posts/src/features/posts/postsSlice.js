@@ -7,6 +7,7 @@ const initialState = {
     status: 'success', //loading, failed, success
 }
 export const getPosts = createAsyncThunk('posts/getPosts', async () => {
+
     const res = await fetch(POST_URL)
     const data = await res.json()
     return data

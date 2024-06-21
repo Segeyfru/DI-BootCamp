@@ -13,6 +13,7 @@ const Posts = (props) =>{
     useEffect(()=>{
         callFetchPosts()
     },[])
+    
     return(
         <>
         <h2>Posts</h2>

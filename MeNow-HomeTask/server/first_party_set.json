@@ -1,0 +1,7 @@
+{
+    "owner": "example-primary.com",
+    "members": [
+        "example-secondary1.com",
+        "example-secondary2.com"
+    ]
+}
