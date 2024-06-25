@@ -2,7 +2,6 @@ import { changeScore, getAllData } from "../models/search_models.js";
 
 
 export const _getAllData = async(req,res)=>{
-    console.log('in controllers');
     try {
         const jsonData = await getAllData()
         // console.log(jsonData);

@@ -16,7 +16,8 @@ dispatch(updateImages({id,likeDislike}))
 
     return (
         <div>
-        <button onClick={()=>updateScore(1)}><FontAwesomeIcon icon={faThumbsUp} /></button> 
+        <button onClick={()=>updateScore(1)} style={{marginRight:'8px'}}><FontAwesomeIcon icon={faThumbsUp} /></button> 
+        
         <button onClick={()=>updateScore(-1)}><FontAwesomeIcon icon={faThumbsDown} /></button>
         </div>
     )

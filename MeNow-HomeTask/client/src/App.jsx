@@ -2,7 +2,7 @@ import { useEffect } from 'react'
 import './App.css'
 import { useDispatch, useSelector } from 'react-redux';
 import { getAllData } from './features/search/slice.js'
-import GetRandom from './features/search/GetRandom.jsx';
+import RandomAndSearch from './features/search/RandomAndSearch.jsx';
 import UpdateScore from './features/search/UpdateScore.jsx';
 
 
@@ -21,7 +21,7 @@ function App() {
       <h1>Hello</h1>
       <h2>Number of Images: {meNow_product_task.length}</h2>
 
-      <GetRandom />
+      <RandomAndSearch />
       <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'space-evenly' }}>
 
 

@@ -18,7 +18,6 @@ export const getAllData = createAsyncThunk('data/all',
         try {
 
             const response = await axios.get(`${import.meta.env.VITE_URL}/all`);
-            console.log(response.data);
             return response.data;
 
         } catch (error) {
@@ -68,9 +67,7 @@ export const dataSlice = createSlice({
             while (state.filteredImages.length < 5) {
                 const randomIndex = Math.floor(Math.random() * state.allImages.length)
                 const randomImage = state.allImages[randomIndex]
-                console.log(randomImage);
                 if (!state.filteredImages.includes(randomImage)) {
-                    console.log('in IF');
                     state.filteredImages.push(randomImage)
                 }
             }
